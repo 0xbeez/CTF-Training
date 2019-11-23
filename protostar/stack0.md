@@ -37,7 +37,7 @@ TEST
 Try again?
 ```   
 We now have to make a theory and then check it using a debugger(in our case GDB).   
-We have a buffer of 64 characters stacked in the bottom of the Stack, on top of which is an integer of size 4 bytes.The goal is to simply change the var _modified_ value into anything thus we can think of overflowing into **mofified**.  
+We have a buffer of 64 characters stacked in the bottom of the Stack, on top of which is an integer of size 4 bytes.The goal is to simply change the var _modified_ value into anything thus we can think of overflowing into **modified**.  
 We can have high hopes on this idea since gets() is used and as the man pages mention:
 *Never use gets(). Because it is impossible to tell without knowing the data in advance how many characters gets() will read, and because gets() will continue to store characters past the end of the buffer, it is extremely dangerous to use. It has been used to break computer security. Use fgets() instead.*  
 This means that we simply need to input a string of 65 characters and that will mean we will modify a byte from modified thus solving the exercice.  
