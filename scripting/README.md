@@ -19,8 +19,8 @@ python # or python3 if the returned version when typing python --version is 2.X
 ```  
 * Interpreter:  
 This is how you will be mostly using python, besides when testing just a simple idea. This can be leveraged by writing code in a X.py file then running 
-````bash
-python X.py
+```bash
+python X.py 
 ```  
 The interpreter will interpret the code line by line and prompt us with output if it has any side effects related to STDOUT.  
 
